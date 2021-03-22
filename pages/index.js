@@ -1,7 +1,8 @@
 import { Container, Input } from 'semantic-ui-react';
-import { useLocalStorage } from 'react-use';
 import Header from '../components/Header';
 import Head from 'next/head';
+
+import { useLocalStorage } from 'react-use';
 
 const CustomLocalStorageHookComponent = () => {
     const [value, setValue] = useLocalStorage('text', 'hello, world');
@@ -18,7 +19,7 @@ const CustomLocalStorageHookComponent = () => {
     );
 };
 
-export default function Home() {
+export default function useLocalStorageHook() {
     return (
         <Container>
             <Head>
